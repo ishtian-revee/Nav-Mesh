@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour {
 
@@ -10,7 +8,7 @@ public class FollowPlayer : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        // Setting the camera position to behind the player forever
+        // Setting the camera position along with the player
         transform.position = Player.position + Offset;
 
         // Setting the camera rotation to a little bit down side towards the player
